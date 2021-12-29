@@ -20,10 +20,20 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v2
   
-    - uses: nttld/setup-ndk@v1
+#     - uses: nttld/setup-ndk@v1
+#       with:
+#        ndk-version: r22b
+
+    - name: bash
+      run: mkdir toolchains
+    - name: specify NDK
+      uses: ravinderjangra/android-ndk-toolchain-setup@0.2
       with:
-       ndk-version: r22b
-       
+        api: '22'
+        arch: 'armeabi-v7a'
+        install-location: 'toolchains'
+        force: true
+
     - name: Git submodule sync
       run: git submodule update --init
 
