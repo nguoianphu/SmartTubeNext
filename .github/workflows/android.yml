@@ -41,4 +41,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: |
-        ./gradlew smarttubetv:assembleDebug --stacktrace
+        ./gradlew smarttubetv:clean --stacktrace
+        ./gradlew smarttubetv:build --stacktrace
