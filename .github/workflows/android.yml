@@ -19,7 +19,11 @@ jobs:
 
     - name: Setup Android SDK
       uses: android-actions/setup-android@v2
-
+  
+    - uses: nttld/setup-ndk@v1
+      with:
+       ndk-version: r22b
+       
     - name: Git submodule sync
       run: git submodule update --init
 
