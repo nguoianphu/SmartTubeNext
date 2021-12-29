@@ -29,7 +29,7 @@ jobs:
     - name: specify NDK
       uses: ravinderjangra/android-ndk-toolchain-setup@0.2
       with:
-        api: '21'
+        api: '20'
         arch: 'arm'
         install-location: 'toolchains'
         force: true
@@ -43,3 +43,4 @@ jobs:
       run: |
         ./gradlew smarttubetv:clean --stacktrace
         ./gradlew smarttubetv:build --stacktrace
+        ./gradlew smarttubetv:assembleDebug --stacktrace
