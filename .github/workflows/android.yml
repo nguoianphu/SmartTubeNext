@@ -29,7 +29,7 @@ jobs:
     - name: specify NDK
       uses: ravinderjangra/android-ndk-toolchain-setup@0.2
       with:
-        api: '22'
+        api: '21'
         arch: 'arm'
         install-location: 'toolchains'
         force: true
