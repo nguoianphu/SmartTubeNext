@@ -30,7 +30,7 @@ jobs:
       uses: ravinderjangra/android-ndk-toolchain-setup@0.2
       with:
         api: '22'
-        arch: 'armeabi-v7a'
+        arch: 'arm'
         install-location: 'toolchains'
         force: true
 
