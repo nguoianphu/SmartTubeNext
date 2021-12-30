@@ -31,6 +31,7 @@ jobs:
 #        ndk-version: r22b
 
     - name: bash
+      if: runner.os != 'windows'
       run: mkdir toolchains
     - name: specify NDK
       uses: ravinderjangra/android-ndk-toolchain-setup@0.2
