@@ -34,6 +34,7 @@ jobs:
       if: runner.os != 'windows'
       run: mkdir toolchains
     - name: specify NDK
+      if: runner.os != 'windows'
       uses: ravinderjangra/android-ndk-toolchain-setup@0.2
       with:
         api: '20'
