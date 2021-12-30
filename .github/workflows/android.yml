@@ -58,6 +58,6 @@ jobs:
     - name: Build with Gradle on Windows
       if: runner.os == 'windows'
       run: |
-        gradlew.bat smarttubetv:clean --stacktrace
-        gradlew.bat smarttubetv:build --stacktrace
-        gradlew.bat smarttubetv:assembleDebug --stacktrace
+        .\gradlew.bat smarttubetv:clean --stacktrace
+        .\gradlew.bat smarttubetv:build --stacktrace
+        .\gradlew.bat smarttubetv:assembleDebug --stacktrace
