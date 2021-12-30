@@ -12,7 +12,7 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - windows
+          - windows-latest
 
     steps:
     - uses: actions/checkout@v2
